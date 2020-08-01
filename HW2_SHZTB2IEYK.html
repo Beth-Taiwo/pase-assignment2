@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetDate</title>
+</head>
+<body>
+    <div>
+        <p id="text">Before the click</p>
+        <button onclick="getDate()">GET DATE</button>
+        <p id="showDate"></p>
+    </div>
+    <script>
+        function getDate(){
+            let time = new Date();
+            document.getElementById("text").style.display = "none";
+            document.getElementById("showDate").innerHTML = time;
+        }
+    </script>
+</body>
+</html>
